@@ -33,14 +33,7 @@ jobs:
           PERPLEXITY_API_KEY: ${{ secrets.PERPLEXITY_API_KEY }}
         run: |
           python src/generate_tweets.py --limit 5
-      - name: Notify Telegram (optional)
-        env:
-          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
-          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
-        run: |
-          python src/notify_telegram.py
+
       # - name: Post to X (optional – requires X API access)
       #   env:
       #     NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
