@@ -1,7 +1,0 @@
-# src/generate_tweets.py
-
-def main():
-    print("Generate Tweets script is ready to use!")
-
-if __name__ == "__main__":
-    main()
